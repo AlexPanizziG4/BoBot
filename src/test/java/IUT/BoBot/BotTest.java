@@ -4,6 +4,8 @@ import static org.junit.Assert.*;
 
 import org.junit.Test;
 
+
+
 /**
  * 
  * Integration tests checking the Bot
@@ -15,10 +17,11 @@ public class BotTest
 {
 	Bot bot = new Bot();
 	
+	
     @Test
     public void testBonjour()
     {
-        assertEquals("Bonjour!", bot.ask("Bonjour"));
+        assertEquals("Bonjour m'sieur !", bot.ask("Bonjour"));
     }
     
     @Test
@@ -32,4 +35,12 @@ public class BotTest
     {
         assertEquals(null, bot.ask("This is not a question."));
     }
+    
+
+    @Test
+    public void TestQuelAgeCell()
+    {
+		assertEquals("Qu'est-ce que tu fais là toi, Tu sais te servir d'un pc à 81 ans ?!", bot.ask("j'ai 81 ans"));
+    }	
+
 }

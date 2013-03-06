@@ -2,7 +2,6 @@ package IUT.BoBot;
 
 import IUT.BoBot.SmartCells.*;
 
-
 public class Bot 
 {
 	/**
